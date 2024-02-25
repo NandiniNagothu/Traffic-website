@@ -1,88 +1,139 @@
-.newsupdates{
-    background-color: lightblue;
+/* Common styles for all devices */
+.newsupdates {
+  background-color: lightblue;
+}
+
+.newscontainer {
+  padding: 10px 20px; /* Adjust padding for better spacing */
+}
+
+.card {
+  width: 100%; /* Adjust width to fit the container */
+  max-width: 300px; /* Limit maximum width */
+  height: auto; /* Make height flexible */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; /* Add margin bottom for spacing between cards */
+}
+
+.cardimg {
+  width: 100%; /* Ensure the image fills the card container */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.styled-button {
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #0056b3;
+}
+
+.navbarcontainernews {
+  background-color: aliceblue;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px; /* Adjust padding for better spacing */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+
+.navbar-navconnews {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-itemconnews {
+  text-align: center;
+  margin-right: 20px; /* Adjust margin for better spacing */
+}
+
+.nav-linknews {
+  color: black;
+  font-size: 16px; /* Decrease font size for better fit */
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.iconnews {
+  display: block;
+  margin: 0 auto;
+}
+
+.datechooser {
+  display: flex;
+  justify-content: center; /* Center the date picker */
+}
+
+.newsbydate {
+  padding: 10px 20px; /* Adjust padding for better spacing */
+}
+
+h5 {
+  align-items: center;
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 767px) {
+  .card {
+      max-width: 250px; /* Decrease max-width for better fit on smaller screens */
   }
-  .newscontainer{
-      padding: 10px 40px;
+
+  .nav-itemconnews {
+      margin-right: 10px; /* Decrease margin for better spacing on smaller screens */
   }
-  .card{
-      width: 300px;
-      height: 20px;
-      box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
-      margin-right: 20px;
+
+  .nav-linknews {
+      font-size: 14px; /* Decrease font size for better fit on smaller screens */
   }
-  .cardimg{
-      width:300px;
-  }
-  /* NewsApp.css */
-  .wrapper{
-      display: flex;
-      justify-content: center;
-  }
-  .styled-button {
-      
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
-    .styled-button:hover {
-      background-color: #0056b3;
-    }
-    
-    .navbarcontainernews {
-      background-color:aliceblue;
-      /* margin-bottom: 20px; */
+}
+
+/* Media Queries for Mobiles */
+@media (max-width: 575px) {
+  .card {
+    max-width: 250px; /* Decrease max-width for better fit on smaller screens */
+}
+  .navbarcontainernews {
+      flex-direction: column; /* Change to column layout for better fit on smaller screens */
       width: 100%;
-      justify-content: space-around;
-      display: flex;
-      flex-direction: row; /* Change to row */
-      padding: 20px 20px;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
-    }
-    
-    .navbar-navconnews {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-    }
-    
-    .nav-itemconnews {
-      text-align: center; /* Center the contents */
-      margin-right: 55px;
-    }
-    
-    .nav-linknews {
-      color: black;
-      font-size: 20px;
-      display: block; /* Display the link as a block element */
-      margin-top: 5px; /* Adjust spacing between icon and text */
-      text-decoration: none; /* Remove underline from the link */
-    }
-    
-    .iconnews {
-      display: block; /* Display the icon as a block element */
-      margin: 0 auto; /* Center the icon horizontally */
-    }
-    .datechooser{
-      display: flex;
-    }
-    .newsbydate{
-      padding: 10px 550px;
-    }
-    h5{
-      align-items: center;
-    }
-   /* NewsByDate.css */
-  .datepicker-input {
-    width: 200px; /* Set the desired width for the input field */
-    height: 35px;
-    margin-bottom: 50px;
   }
-  
-    
-    
-  
+
+  .nav-itemconnews {
+      margin-right: 0; /* Remove right margin for better alignment */
+      margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+
+  .datechooser {
+      flex-direction: column; /* Change to column layout for better fit on smaller screens */
+      align-items: center; /* Center the date picker */
+  }
+
+  .datepicker-input {
+      width: 100%; /* Set input width to fill the container */
+      max-width: 250px; /* Limit maximum width for better fit */
+  }
+  .navbar-navconnews {
+    justify-content: center;
+    margin-top: 10px; /* Add top margin for spacing */
+}
+.newscontainer {
+  width: calc(100% - 30px); /* Calculate width to achieve full width with gap */
+  max-width: none; /* Remove maximum width */
+  margin-right: auto; /* Set right margin to auto for centering */
+  margin-left: auto; /* Set left margin to auto for centering */
+  margin-bottom: 20px; /* Add bottom margin for spacing between cards */
+}
+
+}

@@ -12,7 +12,7 @@ function Contact() {
                     <ul className="navbarcontact">
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
-                                <FontAwesomeIcon icon={faCircleUser} />
+                                <FontAwesomeIcon icon={faCircleUser} className='icon'/>
                                 N.Nirmala Nandini
                             </a>
                         </li>
@@ -42,8 +42,8 @@ function Contact() {
                     <ul className="navbarcontact">
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
-                                <FontAwesomeIcon icon={faCircleUser} />
-                                N.Nirmala Nandini
+                                <FontAwesomeIcon icon={faCircleUser} className='icon'/>
+                                N.Tanishq
                             </a>
                         </li>
                         <li className="nav-itemcontact">
@@ -55,7 +55,7 @@ function Contact() {
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
                                 <FontAwesomeIcon icon={faEnvelope} className='icon' />
-                                20pa1a05b1@vishnu.edu.in
+                                20pa1a05b5@vishnu.edu.in
                             </a>
                         </li>
                         <li className="nav-itemcontact">
@@ -72,8 +72,8 @@ function Contact() {
                     <ul className="navbarcontact">
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
-                                <FontAwesomeIcon icon={faCircleUser} />
-                                N.Nirmala Nandini
+                                <FontAwesomeIcon icon={faCircleUser} className='icon'/>
+                                M.Bhargavi
                             </a>
                         </li>
                         <li className="nav-itemcontact">
@@ -85,7 +85,7 @@ function Contact() {
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
                                 <FontAwesomeIcon icon={faEnvelope} className='icon' />
-                                20pa1a05b1@vishnu.edu.in
+                                20pa1a0594@vishnu.edu.in
                             </a>
                         </li>
                         <li className="nav-itemcontact">
@@ -102,8 +102,8 @@ function Contact() {
                     <ul className="navbarcontact">
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
-                                <FontAwesomeIcon icon={faCircleUser} />
-                                N.Nirmala Nandini
+                                <FontAwesomeIcon icon={faCircleUser} className='icon'/>
+                                M.H.K.Pawan Kalyan
                             </a>
                         </li>
                         <li className="nav-itemcontact">
@@ -115,7 +115,7 @@ function Contact() {
                         <li className="nav-itemcontact">
                             <a href="/" className="nav-linkcontact">
                                 <FontAwesomeIcon icon={faEnvelope} className='icon' />
-                                20pa1a05b1@vishnu.edu.in
+                                20pa1a0590@vishnu.edu.in
                             </a>
                         </li>
                         <li className="nav-itemcontact">

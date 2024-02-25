@@ -3,8 +3,6 @@ body{
 }
 .abheading{
     align-items: center;
-    color: brown;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .subject{
@@ -22,15 +20,9 @@ body{
  text-align: justify;
 
 }
-.abbtn {
-    display: flex;
-    justify-content: center;
-  }
-  
 
 .mainbtn {
     display: inline-block;
-    margin: auto;
     padding: 10px 20px;
     justify-content: space-around;
     background-color:darkgoldenrod;
@@ -75,6 +67,7 @@ body{
     cursor: pointer;
     filter:invert(1);
     max-width: 32px;
+    background-color: red;
 }
 
  @media(max-width :991px){
@@ -88,4 +81,37 @@ body{
     height: 550px;
     padding: 5px 40px;
     width: 300px;
+}
+@media (max-width: 575px) {
+    .abheading {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .subject p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .mainbtn {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .close {
+        top: 20px; /* Adjust close button position */
+        right: 20px; /* Adjust close button position */
+    }
+    .video1 {
+        position: fixed;
+        top: 50%; /* Adjust top position to center vertically */
+        left: 50%; /* Adjust left position to center horizontally */
+        transform: translate(-50%, -50%); /* Center the video container */
+        z-index: 10000;
+        background: rgba(0, 0, 0, 0.85);
+        height: 100%;
+        width: 100%; /* Make the video container full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: height 0.5s ease;
+    }
 }

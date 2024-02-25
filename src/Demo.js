@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import demovideo from './Demo.mp4';
 import './Demo.css'
-// import close from 'images/close.png';
+import close from './images/close.png';
 
 const Demo = () => {
   const [isVideoActive, setIsVideoActive] = useState(false);
@@ -55,7 +55,7 @@ const Demo = () => {
       {isVideoActive && (
         <div className="video1">
           <video src={demovideo} controls autoPlay className="video"></video>
-          <img src="close.png" alt="Close" className="close" onClick={handleVideoClose} />
+          <img src={close} alt="Close" className="close" onClick={handleVideoClose} />
         </div>
       )}
     </div>

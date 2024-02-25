@@ -1,8 +1,8 @@
+/* Base styles */
 body {
   background-color: lightblue;
 }
 
-/* Section Styles */
 .section-container {
   display: flex;
   justify-content: center;
@@ -12,24 +12,23 @@ body {
 
 .text-container {
   flex: 3;
-  padding: 20px;
-  margin-top: 10px; /* Adjust margin */
-  margin-left: 20px; /* Adjust margin */
+  padding: 30px;
+  margin-top: 3px;
+  margin-left: 50px;
 }
 
 .image-container {
   flex: 1;
-  padding: 10px;
-  margin-right: 20px; /* Adjust margin */
+  padding: 20px;
+  margin-right: 50px;
 }
 
 .img1 {
-  width: 100%; /* Adjust width */
+  width: 70%;
   height: auto;
   border-radius: 50%;
 }
 
-/* Text Styles */
 .projectname {
   color: brown;
 }
@@ -47,33 +46,31 @@ p {
   font-family: cursive;
 }
 
-/* Slider Styles */
 .slidercontainer {
   display: flex;
-  flex-direction: column; /* Adjust direction */
   background-color: lightblue;
 }
 
 .imgslider {
-  width: 100%; /* Adjust width */
+  width: 40%;
   object-fit: contain;
-  padding: 10px;
+  padding: 20px 50px;
+  flex: 1;
 }
 
 .slick-slide img {
-  height: auto; /* Adjust height */
+  height: 350px;
 }
 
 .text {
   flex: 1;
   background-color: lightcyan;
-  margin-right: 20px; /* Adjust margin */
+  margin-right: 40px;
 }
 
 .heading {
   color: brown;
-  text-align: center; /* Adjust alignment */
-  margin: 10px; /* Adjust margin */
+  margin-left: 300px;
 }
 
 .points {
@@ -82,37 +79,34 @@ p {
   justify-content: center;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries */
+/* Tablets */
+@media (max-width: 992px) {
+  .section-container {
+      flex-direction: column;
+  }
+
+  .text-container {
+      margin-left: 0;
+  }
+
+  .image-container {
+      margin-right: 0;
+  }
+}
 
 /* Mobile Devices */
 @media (max-width: 576px) {
-  .section-container {
-      flex-direction: column; /* Stack elements vertically */
-  }
   .text-container {
-      margin-left: 0; /* Remove left margin */
+      padding: 15px;
   }
-  .image-container {
-      margin-right: 0; /* Remove right margin */
-  }
-}
 
-/* Tablets */
-@media (min-width: 576px) and (max-width: 992px) {
-  .text-container {
-      margin-left: 30px; /* Adjust left margin */
-  }
   .image-container {
-      margin-right: 30px; /* Adjust right margin */
+      display: none;
   }
-}
 
-/* Desktops */
-@media (min-width: 992px) {
-  .text-container {
-      margin-left: 50px; /* Adjust left margin */
-  }
-  .image-container {
-      margin-right: 50px; /* Adjust right margin */
+  .heading {
+      margin-left: 0;
+      text-align: center;
   }
 }

@@ -1,0 +1,32 @@
+.slidercontainer{
+    display: flex;
+    background-color: lightblue;
+  }
+  .imgslider{
+    width: 40%;
+    object-fit: contain;
+    padding: 20px 50px;
+    
+    flex:1;
+    
+  }
+  
+  .slick-slide img {
+    height: 350px;
+  }
+  .text{
+    flex:1;
+   background-color: #fff;
+   margin-right: 40px;
+  }
+  .heading{
+    color: brown;
+    margin-left: 300px;
+  }
+  .points{
+    width: fit-content;
+   margin: auto;
+   justify-content: center;
+  
+  }
+  

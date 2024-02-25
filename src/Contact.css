@@ -1,0 +1,41 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap; /* Allows flex items to wrap to the next line if necessary */
+    justify-content: space-between; /* Distribute space between items */
+    margin-top: 190px;
+}
+
+.contactcard {
+    width: calc(25% - 10px); /* Set the width of each card to 25% minus margin */
+    margin-bottom: 20px; /* Add some space between each card */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+    background-color:aliceblue;
+    height: 200px;
+}
+
+.contactcont {
+    padding: 10px;
+}
+
+.navbarcontact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-itemcontact {
+    margin-bottom: 10px;
+}
+
+.nav-linkcontact {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+}

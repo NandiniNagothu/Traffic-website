@@ -1,0 +1,76 @@
+body{
+    background-color: lightblue;
+}
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightblue;
+  }
+  .text-container {
+    flex: 3;
+    padding: 30px;
+    margin-top: 3px;
+    margin-left: 50px;
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 20px;
+    margin-right: 50px;
+  }
+  .img1 {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .projectname{
+    color: brown;
+  }
+  h1{
+    margin-top: 10px;
+  }
+  h2{
+    font-family: cursive;
+  }
+  p{
+    font-size: larger;
+    font-family: cursive;
+  }
+  .slidercontainer{
+    display: flex;
+    background-color: lightblue;
+  }
+  .imgslider{
+    width: 40%;
+    object-fit: contain;
+    padding: 20px 50px;
+    
+    flex:1;
+    
+  }
+  
+  .slick-slide img {
+    height: 350px;
+  }
+  .text{
+    flex:1;
+   background-color:lightcyan;
+   margin-right: 40px;
+  }
+  .heading{
+    color: brown;
+    margin-left: 300px;
+  }
+  .points{
+    width: fit-content;
+   margin: auto;
+   justify-content: center;
+  
+  }
+  
+  
+ 
+
+  

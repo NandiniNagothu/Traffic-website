@@ -1,76 +1,118 @@
-body{
-    background-color: lightblue;
+body {
+  background-color: lightblue;
 }
+
+/* Section Styles */
 .section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.text-container {
+  flex: 3;
+  padding: 20px;
+  margin-top: 10px; /* Adjust margin */
+  margin-left: 20px; /* Adjust margin */
+}
+
+.image-container {
+  flex: 1;
+  padding: 10px;
+  margin-right: 20px; /* Adjust margin */
+}
+
+.img1 {
+  width: 100%; /* Adjust width */
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Text Styles */
+.projectname {
+  color: brown;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: cursive;
+}
+
+p {
+  font-size: larger;
+  font-family: cursive;
+}
+
+/* Slider Styles */
+.slidercontainer {
+  display: flex;
+  flex-direction: column; /* Adjust direction */
+  background-color: lightblue;
+}
+
+.imgslider {
+  width: 100%; /* Adjust width */
+  object-fit: contain;
+  padding: 10px;
+}
+
+.slick-slide img {
+  height: auto; /* Adjust height */
+}
+
+.text {
+  flex: 1;
+  background-color: lightcyan;
+  margin-right: 20px; /* Adjust margin */
+}
+
+.heading {
+  color: brown;
+  text-align: center; /* Adjust alignment */
+  margin: 10px; /* Adjust margin */
+}
+
+.points {
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .section-container {
+      flex-direction: column; /* Stack elements vertically */
   }
   .text-container {
-    flex: 3;
-    padding: 30px;
-    margin-top: 3px;
-    margin-left: 50px;
+      margin-left: 0; /* Remove left margin */
   }
-  
   .image-container {
-    flex: 1;
-    padding: 20px;
-    margin-right: 50px;
+      margin-right: 0; /* Remove right margin */
   }
-  .img1 {
-    width: 70%;
-    height: auto;
-    border-radius: 50%;
-  }
+}
 
-  .projectname{
-    color: brown;
+/* Tablets */
+@media (min-width: 576px) and (max-width: 992px) {
+  .text-container {
+      margin-left: 30px; /* Adjust left margin */
   }
-  h1{
-    margin-top: 10px;
+  .image-container {
+      margin-right: 30px; /* Adjust right margin */
   }
-  h2{
-    font-family: cursive;
-  }
-  p{
-    font-size: larger;
-    font-family: cursive;
-  }
-  .slidercontainer{
-    display: flex;
-    background-color: lightblue;
-  }
-  .imgslider{
-    width: 40%;
-    object-fit: contain;
-    padding: 20px 50px;
-    
-    flex:1;
-    
-  }
-  
-  .slick-slide img {
-    height: 350px;
-  }
-  .text{
-    flex:1;
-   background-color:lightcyan;
-   margin-right: 40px;
-  }
-  .heading{
-    color: brown;
-    margin-left: 300px;
-  }
-  .points{
-    width: fit-content;
-   margin: auto;
-   justify-content: center;
-  
-  }
-  
-  
- 
+}
 
-  
+/* Desktops */
+@media (min-width: 992px) {
+  .text-container {
+      margin-left: 50px; /* Adjust left margin */
+  }
+  .image-container {
+      margin-right: 50px; /* Adjust right margin */
+  }
+}
